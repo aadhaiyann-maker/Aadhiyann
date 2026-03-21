@@ -1,0 +1,36 @@
+const Services = () => {
+  const services = [
+    {
+      title: 'Service 1',
+      description: 'Custom websites and web applications tailored to your needs.'
+    },
+    {
+      title: 'Service 2',
+      description: 'Cross-platform mobile applications for iOS and Android.'
+    },
+    {
+      title: 'Consulting',
+      description: 'Expert advice to optimize your digital presence.'
+    }
+  ];
+
+  return (
+    <section id="services" className="section">
+      <div className="container">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions to power your business growth.</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;
+
