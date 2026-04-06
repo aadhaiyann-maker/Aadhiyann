@@ -1,17 +1,15 @@
 const Services = () => {
   const services = [
-    {
-      title: 'Service 1',
-      description: 'Custom websites and web applications tailored to your needs.'
-    },
-    {
-      title: 'Service 2',
-      description: 'Cross-platform mobile applications for iOS and Android.'
-    },
-    {
-      title: 'Consulting',
-      description: 'Expert advice to optimize your digital presence.'
-    }
+    { title: 'Civil Construction' },
+    { title: 'Modular Panels' },
+    { title: 'HVAC Systems' },
+    { title: 'Water Systems' },
+    { title: 'Utility Pipelines' },
+    { title: 'Electrical Projects' },
+    { title: 'Operation & Maintenance' },
+    { title: 'Computer System Validation' },
+    { title: 'Building Management Solutions' },
+    { title: 'Government Liaisoning Work' }
   ];
 
   return (

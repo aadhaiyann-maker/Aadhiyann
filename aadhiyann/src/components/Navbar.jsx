@@ -1,3 +1,4 @@
+import logo from '../assets/nav_logo.png';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -36,13 +37,24 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-left">
-<a href="#hero" className="nav-logo-link" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} style={{ fontWeight: 'bold', fontSize: '1.8rem', color: '#aa3bff', textDecoration: 'none' }}>
-            Aadhiyann
-          </a>
-          <button 
-            className="mobile-menu-btn" 
+          <div className="nav-logo">
+            <img src={logo} alt="Aadhiyann logo" className="logo-img" />
+            {/**
+            <a
+              href="#hero"
+              className="nav-logo-link"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('hero');
+              }}
+            >
+              Aadhiyann
+            </a>
+            **/}
+          </div>
+          <button
+            className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-
           >
             ☰
           </button>
