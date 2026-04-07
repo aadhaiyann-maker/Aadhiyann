@@ -5,6 +5,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,12 +27,13 @@ const Contact = () => {
     emailjs.send(serviceId, templateId, {
       from_name: formData.name,
       from_email: formData.email,
+      from_phone: formData.phone,
       message: formData.message,
       to_email: 'admin@aadhiyann.com'
     }, publicKey)
       .then(() => {
         setSubmitMessage('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
       })
       .catch(() => {
         setSubmitMessage('Failed to send message. Please try again.');
@@ -68,6 +70,14 @@ const Contact = () => {
               name="email"
               placeholder="Your Email"
               value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your Phone Number"
+              value={formData.phone}
               onChange={handleChange}
               required
             />

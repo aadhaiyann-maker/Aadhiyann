@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="section">
       <div className="container">
         <h2>About Us</h2>
-        <p>We are a dynamic team dedicated to delivering exceptional services. With years of experience, we help businesses grow and succeed.</p>
+        <p>With over 30 years of experience in the industry, we are committed to delivering exceptional infrastructure solutions. We will do our best to exceed your expectations and drive your success.</p>
         <div className="about-grid">
           <div className="about-item">
             <h3>Our Mission</h3>

@@ -39,7 +39,6 @@ const Navbar = () => {
         <div className="nav-left">
           <div className="nav-logo">
             <img src={logo} alt="Aadhiyann logo" className="logo-img" />
-            {/**
             <a
               href="#hero"
               className="nav-logo-link"
@@ -48,9 +47,9 @@ const Navbar = () => {
                 scrollToSection('hero');
               }}
             >
-              Aadhiyann
+              <span className="company-name-aadhiyann">AADHIYANN</span>
+              <div className="company-name-infratech">INFRAATECH PRIVATE LIMITED</div>
             </a>
-            **/}
           </div>
           <button
             className="mobile-menu-btn"

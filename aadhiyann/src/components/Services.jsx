@@ -1,15 +1,26 @@
+import civilConstruction from '../assets/services/civil-construction.png';
+import modularPanels from '../assets/services/modular-panels.png';
+import hvacSystems from '../assets/services/hvac-systems.png';
+import waterSystems from '../assets/services/water-systems.png';
+import utilityPipelines from '../assets/services/utility-pipelines.png';
+import electricalProjects from '../assets/services/electrical-projects.jpg';
+import operationMaintenance from '../assets/services/operation-maintenance.jpg';
+import computerValidation from '../assets/services/computer-validation.png';
+import buildingManagement from '../assets/services/building-management.png';
+import governmentLiaisoning from '../assets/services/government-liaisoning.png';
+
 const Services = () => {
   const services = [
-    { title: 'Civil Construction' },
-    { title: 'Modular Panels' },
-    { title: 'HVAC Systems' },
-    { title: 'Water Systems' },
-    { title: 'Utility Pipelines' },
-    { title: 'Electrical Projects' },
-    { title: 'Operation & Maintenance' },
-    { title: 'Computer System Validation' },
-    { title: 'Building Management Solutions' },
-    { title: 'Government Liaisoning Work' }
+    { title: 'Civil Construction', image: civilConstruction },
+    { title: 'Modular Panels', image: modularPanels },
+    { title: 'HVAC Systems', image: hvacSystems },
+    { title: 'Water Systems', image: waterSystems },
+    { title: 'Utility Pipelines', image: utilityPipelines },
+    { title: 'Electrical Projects', image: electricalProjects },
+    { title: 'Operation & Maintenance', image: operationMaintenance },
+    { title: 'Computer System Validation', image: computerValidation },
+    { title: 'Building Management Solutions', image: buildingManagement },
+    { title: 'Government Liaisoning Work', image: governmentLiaisoning }
   ];
 
   return (
@@ -20,6 +31,7 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">
+              <img src={service.image} alt={service.title} className="service-image" />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
