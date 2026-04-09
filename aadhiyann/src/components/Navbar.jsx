@@ -6,7 +6,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'contact'];
+      const sections = ['hero', 'about', 'services', 'customers', 'contact'];
       let current = '';
       sections.forEach(section => {
         if (window.scrollY >= (document.getElementById(section)?.offsetTop || 0) - 100) {
@@ -28,6 +28,7 @@ const Navbar = () => {
     { id: 'hero', label: 'Home' },
     { id: 'about', label: 'About Us' },
     { id: 'services', label: 'Services' },
+    { id: 'customers', label: 'Our Customers' },
     { id: 'contact', label: 'Contact Us' }
   ];
 
