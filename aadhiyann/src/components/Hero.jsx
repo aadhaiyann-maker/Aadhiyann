@@ -27,8 +27,8 @@ const Hero = () => {
             </video>
           </div>
           <div className="video-content">
-            <h2>Building the Future of Pharmaceutical Infrastructure</h2>
-            <p>Watch how Aadhiyann Infratech delivers cutting-edge pharmaceutical facilities with precision, quality, and innovation.</p>
+            <h2>Building the Future of Infrastructure</h2>
+            <p>Watch how Aadhiyann Infraatech delivers cutting-edge infrastructure solutions across all sectors with precision, quality, and innovation.</p>
           </div>
         </div>
       </section>
