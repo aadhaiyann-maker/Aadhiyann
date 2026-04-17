@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="contact-info">
             <h3>Let's Talk</h3>
             <p><strong>Email:</strong> info@aadhiyann.com</p>
-            <p><strong>Phone:</strong> +91 8754562829</p>
+            <p><strong>Phone:</strong> +91 8754562829, +91 9841209709</p>
             <p><strong>Address:</strong><br />
             Plot No 6, Thirupathi Thirumalai Nagar,<br />
             Nallambakkam Kandigai,<br />

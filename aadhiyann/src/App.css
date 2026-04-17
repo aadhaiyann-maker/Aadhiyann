@@ -183,6 +183,43 @@ body {
   animation: fadeInUp 1s ease 0.2s both;
 }
 
+.video-section {
+  padding: 4rem 0;
+  background: #f8f9ff;
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 100%;
+  margin: 0 auto 3rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(107, 51, 255, 0.15);
+}
+
+.promo-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.video-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #25264f;
+  font-weight: 700;
+}
+
+.video-content p {
+  font-size: 1.2rem;
+  color: #6b6375;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 .cta-btn, .submit-btn {
   background: #ffc947;
   color: #1d114a;
@@ -325,6 +362,22 @@ body {
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
+  }
+
+  .video-section {
+    padding: 3rem 0;
+  }
+
+  .video-wrapper {
+    margin: 0 auto 2rem;
+  }
+
+  .video-content h2 {
+    font-size: 2rem;
+  }
+
+  .video-content p {
+    font-size: 1.1rem;
   }
 
   .section {
