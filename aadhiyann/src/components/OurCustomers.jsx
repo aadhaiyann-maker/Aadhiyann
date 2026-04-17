@@ -5,40 +5,64 @@ const OurCustomers = () => {
 
   const customers = [
     {
-      name: "TechCorp Solutions",
-      logo: "🏢",
-      testimonial: "Aadhiyann Infratech delivered exceptional quality on our commercial project. Their attention to detail and timeline management were outstanding.",
-      project: "Commercial Complex"
+      name: "Apex Laboratories",
+      logo: "💊",
+      testimonial: "Aadhiyann provided excellent infrastructure solutions for our pharmaceutical manufacturing facility. Their expertise in pharma construction is exceptional.",
+      project: "Pharmaceutical Facility"
     },
     {
-      name: "Green Homes Realty",
-      logo: "🏘️",
-      testimonial: "We've partnered with Aadhiyann for multiple residential projects. Their commitment to sustainable building practices is impressive.",
-      project: "Residential Township"
-    },
-    {
-      name: "Industrial Park Ltd",
+      name: "Esjay Pharma",
       logo: "🏭",
-      testimonial: "The industrial facility they constructed exceeded our expectations. Professional team, excellent execution, and on-time delivery.",
-      project: "Industrial Facility"
+      testimonial: "Professional team with deep understanding of pharmaceutical industry requirements. Our research facility was completed on time and exceeded expectations.",
+      project: "Research Facility"
     },
     {
-      name: "EggFarm Enterprises",
-      logo: "🥚",
-      testimonial: "Aadhiyann designed and built our state-of-the-art egg processing facility. Their expertise in specialized construction is unmatched.",
-      project: "Egg Processing Plant"
+      name: "Evergreen Pharma Congo",
+      logo: "🌍",
+      testimonial: "Outstanding construction quality for our pharmaceutical plant in Congo. Aadhiyann understands international standards and local requirements perfectly.",
+      project: "Pharmaceutical Plant"
     },
     {
-      name: "Metro Developers",
-      logo: "🏗️",
-      testimonial: "Outstanding construction quality and project management. They understand the complexities of large-scale urban development.",
-      project: "Mixed-Use Development"
+      name: "OrBion Pharmaceutical",
+      logo: "🔬",
+      testimonial: "Their attention to detail in pharmaceutical facility construction is remarkable. Our biotech lab meets all regulatory requirements.",
+      project: "Biotech Laboratory"
     },
     {
-      name: "AgriTech Solutions",
-      logo: "🌾",
-      testimonial: "Their agricultural construction projects demonstrate deep understanding of modern farming infrastructure requirements.",
-      project: "Agricultural Complex"
+      name: "Crescent R & D",
+      logo: "🧪",
+      testimonial: "Excellent execution of our R&D facility. Aadhiyann's team understands the complex needs of pharmaceutical research infrastructure.",
+      project: "R&D Facility"
+    },
+    {
+      name: "Kausikh Therapeutic",
+      logo: "⚕️",
+      testimonial: "Professional approach to therapeutic manufacturing facility construction. Quality workmanship and timely project delivery.",
+      project: "Manufacturing Facility"
+    },
+    {
+      name: "Magpharm Algeria",
+      logo: "🏥",
+      testimonial: "Successfully delivered our pharmaceutical facility in Algeria with international standards. Great team with global experience.",
+      project: "Pharmaceutical Facility"
+    },
+    {
+      name: "Heal India Laboratories",
+      logo: "💉",
+      testimonial: "Outstanding construction of our laboratory facilities. Aadhiyann understands the specific requirements of pharmaceutical testing labs.",
+      project: "Testing Laboratory"
+    },
+    {
+      name: "Caplin Group",
+      logo: "📦",
+      testimonial: "Excellent infrastructure solutions for our pharmaceutical operations. Their commitment to quality and safety is impressive.",
+      project: "Pharmaceutical Operations"
+    },
+    {
+      name: "Unilink Pharma",
+      logo: "🤝",
+      testimonial: "Professional team that delivered our pharmaceutical distribution center on schedule. Great understanding of industry requirements.",
+      project: "Distribution Center"
     }
   ];
 
@@ -62,14 +86,17 @@ const OurCustomers = () => {
             <div className="logos-grid">
               {customers.map((customer, index) => (
                 <div key={index} className="customer-logo-item">
-                  <div className="customer-logo">{customer.logo}</div>
+                  <div className="customer-logo">
+                    {customer.logo}
+                  </div>
                   <span className="customer-name">{customer.name}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="testimonials-section">
+          {/* Testimonials section commented out */}
+          {/* <div className="testimonials-section">
             <h3>What Our Customers Say</h3>
             <div className="testimonial-container">
               <button className="testimonial-nav prev" onClick={prevTestimonial}>
@@ -103,7 +130,7 @@ const OurCustomers = () => {
                 />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="stats-section">
@@ -113,7 +140,7 @@ const OurCustomers = () => {
               <div className="stat-label">Projects Completed</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">50+</div>
+              <div className="stat-number">140+</div>
               <div className="stat-label">Happy Customers</div>
             </div>
             <div className="stat-item">
@@ -121,7 +148,7 @@ const OurCustomers = () => {
               <div className="stat-label">Years Experience</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">98%</div>
+              <div className="stat-number">100%</div>
               <div className="stat-label">Customer Satisfaction</div>
             </div>
           </div>

@@ -370,8 +370,8 @@ html {
 
 /* Our Customers Styles */
 .customers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
   margin-bottom: 4rem;
 }
@@ -385,8 +385,9 @@ html {
 
 .logos-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
 .customer-logo-item {
@@ -406,14 +407,24 @@ html {
 }
 
 .customer-logo {
-  font-size: 2rem;
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(107, 51, 255, 0.1);
-  border-radius: 50%;
+  background: linear-gradient(135deg, #6b33ff 0%, #9b59ff 100%);
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(107, 51, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-logo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 51, 255, 0.3);
 }
 
 .customer-name {
