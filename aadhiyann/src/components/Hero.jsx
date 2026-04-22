@@ -1,3 +1,5 @@
+import heroVideo from '../assets/videos/hero-background.mp4';
+
 const Hero = () => {
   return (
     <>
@@ -22,7 +24,7 @@ const Hero = () => {
               loop
               playsInline
             >
-              <source src="/src/assets/videos/hero-background.mp4" type="video/mp4" />
+              <source src={heroVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

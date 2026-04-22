@@ -1,6 +1,6 @@
 import civilConstruction from '../assets/services/civil-construction.png';
 import modularPanels from '../assets/services/modular-panels.png';
-import hvacSystems from '../assets/services/hvac-systems.png';
+import hvacSystems from '../assets/services/hvac-systems.jpeg';
 import waterSystems from '../assets/services/water-systems.jpg';
 import utilityPipelines from '../assets/services/utility-pipelines.jpeg';
 import electricalProjects from '../assets/services/electrical-projects.jpg';
@@ -8,12 +8,14 @@ import operationMaintenance from '../assets/services/operation-maintenance.jpg';
 import computerValidation from '../assets/services/computer-validation.png';
 import buildingManagement from '../assets/services/building-management.png';
 import governmentLiaisoning from '../assets/services/government-liaisoning.png';
+import pufloorig from '../assets/services/PU floornig.jpeg';
 
 const Services = () => {
   const services = [
     { title: 'Civil Construction', image: civilConstruction },
     { title: 'Modular Panels', image: modularPanels },
     { title: 'HVAC Systems', image: hvacSystems },
+    { title: 'PU/Epoxy Flooring works', image: pufloorig },
     { title: 'Water Systems', image: waterSystems },
     { title: 'Utility Pipelines', image: utilityPipelines },
     { title: 'Electrical Projects', image: electricalProjects },
